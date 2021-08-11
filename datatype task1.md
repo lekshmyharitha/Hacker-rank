@@ -1,4 +1,4 @@
-# Hacker-rank
+Day 1: Data Types
 Solutions of hacker rank in python
 Task
 Complete the code in the editor below. The variables , , and  are already declared and initialized for you. You must:
