@@ -1,0 +1,24 @@
+T=int(input( ))
+
+def remove(string):
+    return string.replace(" ", "")
+
+for i in range(T):
+    even=[]
+    odd=[]
+    S=input( )
+    
+    for index,items in enumerate(S):
+                   if index%2==0:
+                       even.append(items)
+                       #print(even)
+                   else:
+                       odd.append(items)
+                       #print(odd)
+    evenlistToStr = ' '.join([str(item) for item in odd])
+    evenlistToStr=remove(evenlistToStr)
+    oddlistToStr = ' '.join([str(item) for item in even])
+    oddlistToStr=remove(oddlistToStr)
+              #new_list=oddlistToStr+' '+' '+evenlistToStr
+    print(oddlistToStr+' '+evenlistToStr)
+ 
