@@ -1,0 +1,17 @@
+number_people=int(input('number'))
+phonebook={}
+for people in range(0,number_people):
+    #print(number_people)
+    people_key=input('Key')
+    people_value=input('Value')
+    phonebook.update({people_key:people_value})
+    #print(phonebook)
+
+
+query_input=input()
+for k, v in phonebook.items():
+  if query_input in k:
+      print(f'{k}={v}')
+  else:
+      print('Not Found')
+  break
