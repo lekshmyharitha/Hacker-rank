@@ -7,11 +7,13 @@ for people in range(0,number_people):
     phonebook.update({people_key:people_value})
     #print(phonebook)
 
-
-query_input=input()
-for k, v in phonebook.items():
-  if query_input in k:
-      print(f'{k}={v}')
-  else:
-      print('Not Found')
-  break
+while True:
+    try:
+        query_input=input()
+     #for k, v in phonebook.items():
+        if query_input in phonebook.key:
+            print(f'{phonebook.key}={phonebook.value}')
+        else:
+           print('Not Found')
+    except EOFError:
+         break
